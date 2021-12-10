@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{102F6292-02EA-D844-32C6-8B6DCC8A0500}</ProjectGuid>
+    <ProjectGuid>{C7F2E5AC-487D-4515-9000-1EFB7A233595}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>fps.Gameplay</AssemblyName>
@@ -53,29 +53,29 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FPS\Scripts\Gameplay\Managers\PlayerInputHandler.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\Jetpack.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Objectives\ObjectiveKillEnemies.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\ChargedProjectileEffectsHandler.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\OverheatBehavior.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\HealthPickup.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\WeaponFuelCellHandler.cs" />
+    <Compile Include="Assets\FPS\Scripts\Gameplay\WeaponPickup.cs" />
+    <Compile Include="Assets\FPS\Scripts\Gameplay\ProjectileChargeParameters.cs" />
+    <Compile Include="Assets\FPS\Scripts\Gameplay\PositionBobbing.cs" />
+    <Compile Include="Assets\FPS\Scripts\Gameplay\TeleportPlayer.cs" />
+    <Compile Include="Assets\FPS\Scripts\Gameplay\Objectives\ObjectiveKillEnemies.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\Pickup.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\JetpackPickup.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\WeaponPickup.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\ProjectileStandard.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\Managers\PlayerWeaponsManager.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\Objectives\ObjectiveReachPoint.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\AmmoPickup.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\Objectives\ObjectivePickupItem.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\ProjectileChargeParameters.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\PlayerCharacterController.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\PositionBobbing.cs" />
     <Compile Include="Assets\FPS\Scripts\Gameplay\ChargedWeaponEffectsHandler.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\TeleportPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\FPS\Scripts\Gameplay\fps.Gameplay.asmdef" />
@@ -306,14 +306,8 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
-      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
@@ -324,14 +318,14 @@
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>Library\PackageCache\com.unity.connect.share@4.1.1\Plugins\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Compression.FileSystem">
-      <HintPath>Library\PackageCache\com.unity.connect.share@4.1.1\Plugins\System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -687,7 +681,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="fps.Game.csproj">
-      <Project>{FE410075-CA49-5D25-D8F5-54BCE13E4428}</Project>
+      <Project>{14F310B4-B6C8-F033-CFE5-EA8C2DAC397C}</Project>
       <Name>fps.Game</Name>
     </ProjectReference>
   </ItemGroup>

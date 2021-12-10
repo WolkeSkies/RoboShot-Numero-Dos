@@ -5,6 +5,9 @@ namespace Unity.FPS.Game
 {
     public class Health : MonoBehaviour
     {
+        [Tooltip("Top part")] public GameObject topPart;
+        [Tooltip("Eye ball part")] public GameObject eyeBallPart;
+        [Tooltip("Bottom part")] public GameObject bottomPart;
         [Tooltip("Maximum amount of health")] public float MaxHealth = 10f;
 
         [Tooltip("Health ratio at which the critical health vignette starts appearing")]
@@ -81,6 +84,10 @@ namespace Unity.FPS.Game
             {
                 m_IsDead = true;
                 OnDie?.Invoke();
+                Destroy(gameObject);
+                Instantiate(topPart, transform.position, transform.rotation);
+                Instantiate(bottomPart, transform.position, transform.rotation);
+                Instantiate(eyeBallPart, transform.position, transform.rotation);
             }
         }
     }

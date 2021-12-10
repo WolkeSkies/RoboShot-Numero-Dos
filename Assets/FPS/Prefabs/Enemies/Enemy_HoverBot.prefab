@@ -196,6 +196,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27364eefd6dd0341ba72a3bfc0d9727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  topPart: {fileID: 5243761352152302224, guid: 5add97a44a2ce7e4897cc72d5919547e, type: 3}
+  eyeBallPart: {fileID: 9126419180190307469, guid: ee9a5fc4b0b43c045b72ea286d4ea557,
+    type: 3}
+  bottomPart: {fileID: 8764225326144520879, guid: cf18fbd8e78838345819d335aace29d3,
+    type: 3}
   MaxHealth: 100
   CriticalHealthRatio: 0.3
 --- !u!114 &3464315327790461765
@@ -767,7 +772,15 @@ MonoBehaviour:
     CrosshairSprite: {fileID: 0}
     CrosshairSize: 0
     CrosshairColor: {r: 0, g: 0, b: 0, a: 0}
+  CrosshairDefault:
+    CrosshairSprite: {fileID: 0}
+    CrosshairSize: 0
+    CrosshairColor: {r: 0, g: 0, b: 0, a: 0}
   CrosshairDataTargetInSight:
+    CrosshairSprite: {fileID: 0}
+    CrosshairSize: 0
+    CrosshairColor: {r: 0, g: 0, b: 0, a: 0}
+  CrosshairDataAim:
     CrosshairSprite: {fileID: 0}
     CrosshairSize: 0
     CrosshairColor: {r: 0, g: 0, b: 0, a: 0}
@@ -790,6 +803,7 @@ MonoBehaviour:
   ShellCasingEjectionForce: 2
   ShellPoolSize: 1
   AmmoReloadRate: 0.5
+  IsRifle: 0
   AmmoReloadDelay: 0.5
   MaxAmmo: 100
   AutomaticReleaseOnCharged: 0

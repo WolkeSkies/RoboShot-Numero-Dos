@@ -36,6 +36,7 @@ namespace Unity.FPS.Game
 
         [Tooltip("Default data for the crosshair")]
         public CrosshairData CrosshairDataDefault;
+        public CrosshairData CrosshairDefault;
 
         [Tooltip("Data for the crosshair when targeting an enemy")]
         public CrosshairData CrosshairDataTargetInSight;
@@ -91,6 +92,8 @@ namespace Unity.FPS.Game
         [Range(1, 30)] public int ShellPoolSize = 1;
         [Tooltip("Amount of ammo reloaded per second")]
         public float AmmoReloadRate = 1f;
+        [Tooltip("Is Rifle")]
+        public bool IsRifle;
 
         [Tooltip("Delay after the last shot before starting to reload")]
         public float AmmoReloadDelay = 2f;
@@ -241,9 +244,9 @@ namespace Unity.FPS.Game
         //Custom Crosshair Changer
         public void UpdateCrosshair()
         {
-            if (Input.GetMouseButtonDown(1))
+            if (IsRifle) 
             {
-                CrosshairDataDefault.CrosshairSprite = CrosshairDataAim.CrosshairSprite;
+
             }
         }
 
