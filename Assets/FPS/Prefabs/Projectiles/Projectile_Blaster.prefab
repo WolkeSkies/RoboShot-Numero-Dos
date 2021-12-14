@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3659995153115176982}
   - component: {fileID: 8924682559891268397}
+  - component: {fileID: 8583861693030525453}
   m_Layer: 0
   m_Name: Projectile_Blaster
   m_TagString: Untagged
@@ -47,6 +48,8 @@ MonoBehaviour:
   Radius: 0.01
   Root: {fileID: 3659995153115176982}
   Tip: {fileID: 1135791333161367127}
+  explosionPoint: {fileID: 8636093749408880203, guid: bd32e80815387404b8f01159259b5066,
+    type: 3}
   MaxLifeTime: 5
   ImpactVfx: {fileID: 7655095426451682942, guid: a7d68b1a502e02a49b8efb1b86a8c931,
     type: 3}
@@ -63,6 +66,20 @@ MonoBehaviour:
   Damage: 15
   AreaOfDamage: {fileID: 0}
   RadiusColor: {r: 0, g: 1, b: 0.9007921, a: 1}
+--- !u!114 &8583861693030525453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3659995153115176983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9c93d552f1890f4888843c65d062c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
+  radius: 0
 --- !u!1 &5564024855854763701
 GameObject:
   m_ObjectHideFlags: 0

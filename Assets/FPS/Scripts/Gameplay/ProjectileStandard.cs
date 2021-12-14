@@ -14,6 +14,7 @@ namespace Unity.FPS.Gameplay
 
         [Tooltip("Transform representing the tip of the projectile (used for accurate collision detection)")]
         public Transform Tip;
+        [Tooltip("Explosion Point")] public GameObject explosionPoint;
 
         [Tooltip("LifeTime of the projectile")]
         public float MaxLifeTime = 5f;
@@ -176,6 +177,7 @@ namespace Unity.FPS.Gameplay
                 {
                     if (IsHitValid(hit) && hit.distance < closestHit.distance)
                     {
+                        
                         foundHit = true;
                         closestHit = hit;
                     }
@@ -184,6 +186,7 @@ namespace Unity.FPS.Gameplay
                 if (foundHit)
                 {
                     // Handle case of casting while already inside a collider
+                    Instantiate(explosionPoint, transform.position, transform.rotation);
                     if (closestHit.distance <= 0f)
                     {
                         closestHit.point = Root.position;

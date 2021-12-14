@@ -8,6 +8,7 @@ namespace Unity.FPS.Game
         [Tooltip("Top part")] public GameObject topPart;
         [Tooltip("Eye ball part")] public GameObject eyeBallPart;
         [Tooltip("Bottom part")] public GameObject bottomPart;
+        [Tooltip("Explosion part")] public GameObject explosionPart;
         [Tooltip("Maximum amount of health")] public float MaxHealth = 10f;
 
         [Tooltip("Health ratio at which the critical health vignette starts appearing")]
@@ -88,6 +89,9 @@ namespace Unity.FPS.Game
                 Instantiate(topPart, transform.position, transform.rotation);
                 Instantiate(bottomPart, transform.position, transform.rotation);
                 Instantiate(eyeBallPart, transform.position, transform.rotation);
+                var explposition = new Vector3(Random.Range(-0.5f, 0.5f), 0, Random.Range(-0.5f, 0.5f));
+
+                Instantiate(explosionPart, transform.position + explposition, transform.rotation);
             }
         }
     }

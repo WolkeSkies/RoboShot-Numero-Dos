@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c7f2e5ac-487d-4515-9000-1efb7a233595": {
+      "ProjectGuid": "c7f2e5ac-487d-4515-9000-1efb7a233595",
+      "DisplayName": "fps.Gameplay",
+      "ColorIndex": 0
+    },
+    "14f310b4-b6c8-f033-cfe5-ea8c2dac397c": {
+      "ProjectGuid": "14f310b4-b6c8-f033-cfe5-ea8c2dac397c",
+      "DisplayName": "fps.Game",
+      "ColorIndex": 1
+    },
+    "847bf490-7420-3c94-0e08-e54c9b052d39": {
+      "ProjectGuid": "847bf490-7420-3c94-0e08-e54c9b052d39",
+      "DisplayName": "Assembly-CSharp",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

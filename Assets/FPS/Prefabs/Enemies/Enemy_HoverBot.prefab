@@ -73,7 +73,7 @@ GameObject:
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2015434656898269656
 Transform:
   m_ObjectHideFlags: 0
@@ -200,6 +200,8 @@ MonoBehaviour:
   eyeBallPart: {fileID: 9126419180190307469, guid: ee9a5fc4b0b43c045b72ea286d4ea557,
     type: 3}
   bottomPart: {fileID: 8764225326144520879, guid: cf18fbd8e78838345819d335aace29d3,
+    type: 3}
+  explosionPart: {fileID: 7856858712543871003, guid: 05c57aa1e95aa49439137b2cd316c423,
     type: 3}
   MaxHealth: 100
   CriticalHealthRatio: 0.3

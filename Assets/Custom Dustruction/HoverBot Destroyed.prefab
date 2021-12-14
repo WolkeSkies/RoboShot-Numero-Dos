@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 8196979633485319774}
   - component: {fileID: 8196979633485319773}
   - component: {fileID: 8196979633485319772}
+  - component: {fileID: 7953304442611839802}
   m_Layer: 0
   m_Name: EyeBall
   m_TagString: Untagged
@@ -341,6 +342,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7953304442611839802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8196979633485319747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75efdfed56b1ff488000e26d4c20719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPoint: {fileID: 7856858712543871003, guid: 05c57aa1e95aa49439137b2cd316c423,
+    type: 3}
 --- !u!1 &8196979633485319761
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +365,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8196979633485681265}
-  - component: {fileID: 8196979633494719889}
   m_Layer: 0
   m_Name: HoverBot Destroyed
   m_TagString: Untagged
@@ -375,22 +389,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8196979633494719889
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8196979633485319761}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 8e64c7aa328349d4ea713298f19a414f, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
